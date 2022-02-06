@@ -1,0 +1,9 @@
+nav {
+    list-style: none;
+    display: inline;
+    background-color: cadetblue;
+}
+
+body {
+    background-color: darksalmon;
+}
