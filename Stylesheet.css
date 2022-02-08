@@ -1,9 +1,87 @@
-nav {
-    list-style: none;
-    display: inline;
-    background-color: cadetblue;
+.headerbackground {
+    background-color: rgba(105, 105, 105, 0);
+    padding: 0pt 0pt 40pt 0pt;
+    width: auto;
+    height: fit-content;
+    display: block;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footerbackground {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: dimgrey;
+    width: auto;
+    height: fit-content;
+    display: block;
+    padding: 0pt 0pt 40pt 0pt;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 97%;
+    align-items: center;
+    display: inline-block;
+    margin: 0pt 5pt 0pt 5pt;
+}
+
+.header {
+    position: fixed;
+    top: 0pt;
+    left: 0;
+    width: 97%;
+    margin: 0;
+    align-items: center;
+    padding: 0px 0px 5px 30px;
+    overflow: hidden;
+    display: inline-block;
+    float: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15;
+    background-color: rgb(26, 182, 130);
+    font-size: medium;
+    display: block;
+}
+
+.navitem {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 0px 8px 0px 8px;
 }
 
 body {
-    background-color: darksalmon;
+    background-image: url("SparkleSky.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+a:active {
+    text-decoration: none;
+    color: chocolate;
 }
