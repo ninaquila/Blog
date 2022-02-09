@@ -1,5 +1,5 @@
 .headerbackground {
-    background-color: rgba(105, 105, 105, 0);
+    background-color: cornflowerblue;
     padding: 0pt 0pt 40pt 0pt;
     width: auto;
     height: fit-content;
@@ -7,6 +7,9 @@
     align-items: center;
     overflow: hidden;
     text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
 }
 
 .footerbackground {
@@ -43,6 +46,8 @@
     overflow: hidden;
     display: inline-block;
     float: none;
+    background-color: cornflowerblue;
+    ;
 }
 
 ul {
@@ -50,8 +55,10 @@ ul {
     margin: 0;
     padding: 15;
     background-color: rgb(26, 182, 130);
-    font-size: medium;
+    font-size: 12pt;
     display: block;
+    border-radius: 30%;
+    border: 5pt solid cornflowerblue;
 }
 
 .navitem {
@@ -85,3 +92,30 @@ a:active {
     text-decoration: none;
     color: chocolate;
 }
+
+h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.headline {
+    padding: 1%;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.static {
+    background-image: url("double-bubble-outline.png");
+}
+
+.WrapGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.one {}
+
+.two {}
