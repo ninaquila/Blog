@@ -1,3 +1,14 @@
+body {
+    background-image: url("new_background.gif");
+    background-repeat: repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 4fr;
+    column-gap: 20pt;
+    grid-template-areas: "header header header" "one.." "two third third third third" "two third third third third"
+}
+
 .headerbackground {
     background-color: cornflowerblue;
     padding: 0pt 0pt 50pt 0pt;
@@ -9,11 +20,9 @@
     text-align: center;
     top: 0;
     left: 0;
-    position: fixed;
 }
 
 .footerbackground {
-    position: fixed;
     bottom: 0;
     text-align: center;
     background-color: dimgrey;
@@ -26,7 +35,6 @@
 }
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
@@ -37,7 +45,6 @@
 }
 
 .header {
-    position: fixed;
     top: 0pt;
     left: 0;
     width: 97%;
@@ -46,7 +53,6 @@
     padding: 0px 0px 5px 30px;
     overflow: hidden;
     display: inline-block;
-    float: none;
     background-color: cornflowerblue;
     border-radius: 0 0 50% 50%;
     border: 2pt black dotted;
@@ -66,12 +72,6 @@ ul {
     display: inline-block;
     box-sizing: content-box;
     padding: 0px 8px 0px 8px;
-}
-
-body {
-    background-image: url("new_background.gif");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 a:link {
@@ -118,13 +118,7 @@ html {
     color: aliceblue;
 }
 
-.WrapGrid {
-    display: grid;
-    grid-template-columns: 5fr;
-    grid-template-rows: 4fr;
-    column-gap: 20pt;
-    grid-template-areas: "header header header" "one.." "two third third third third" "two third third third third"
-}
+.WrapGrid {}
 
 .one {
     display: block;
@@ -133,7 +127,12 @@ html {
 .two {}
 
 .third {
-    float: right;
+    border-radius: 20%;
+    border: 2pt black;
+    background-color: rgba(199, 167, 230, 0.753);
+    width: auto;
+    display: block;
+    text-align: left;
 }
 
 .HomeImage {
@@ -141,4 +140,10 @@ html {
     width: auto;
     border-radius: 50%;
     float: left;
+}
+
+@media (max-width: 300px) {
+    .p {
+        font-size: small;
+    }
 }
