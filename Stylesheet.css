@@ -1,188 +1,205 @@
-                    html,
-                    body {
-                        margin: 0;
-                        height: 100%;
-                    }
-                    
-                    body {
-                        background-image: url("new_background.gif");
-                        background-repeat: repeat;
-                        background-size: cover;
-                        display: grid;
-                        grid-template-columns: 5fr;
-                        grid-template-rows: 4fr;
-                        column-gap: 20pt;
-                        grid-template-areas: "header header header" "one.." "two third third third third" "two third third third third"
-                    }
-                    
-                    .footer {
-                        left: 0;
-                        bottom: 0;
-                        right: 0;
-                        width: 100%;
-                        text-align: center;
-                        justify-content: center;
-                        display: inline-block;
-                        background-color: cornflowerblue;
-                        border-radius: 50% 50% 0% 0%;
-                        height: 30px;
-                        margin-top: 100px;
-                    }
-                    
-                    .Content {
-                        min-height: 100%;
-                        margin: 0 auto 600px;
-                        padding: 20px;
-                    }
-                    
-                    .title {
-                        color: aliceblue;
-                    }
-                    
-                    .header {
-                        top: 0pt;
-                        left: 0;
-                        width: 98%;
-                        margin: 0;
-                        align-items: center;
-                        padding: 0px 0px 5px 30px;
-                        overflow: hidden;
-                        display: inline-block;
-                        background-color: cornflowerblue;
-                        border-radius: 0 0 50% 50%;
-                        justify-content: center;
-                        text-align: center;
-                        height: 20px;
-                    }
-                    
-                    .Info {
-                        display: flexbox;
-                        align-items: center;
-                    }
-                    
-                    ul {
-                        list-style-type: none;
-                        margin: 0;
-                        padding: 15;
-                        font-size: 18pt;
-                        display: block;
-                        ;
-                    }
-                    
-                    .navitem {
-                        display: inline-block;
-                        box-sizing: content-box;
-                        padding: 0px 8px 0px 8px;
-                    }
-                    
-                    a:link {
-                        text-decoration: none;
-                        color: black;
-                    }
-                    
-                    a:visited {
-                        text-decoration: none;
-                        color: blueviolet;
-                    }
-                    
-                    a:hover {
-                        text-decoration: none;
-                        color: blueviolet;
-                    }
-                    
-                    a:active {
-                        text-decoration: none;
-                        color: chocolate;
-                    }
-                    
-                    h1 {
-                        text-align: center;
-                        font-size: 40px;
-                        background-color: cornflowerblue;
-                        padding: 1pt 1pt 1pt 1pt;
-                        border-radius: 15px;
-                        display: inline-block;
-                        color: blueviolet;
-                    }
-                    
-                    .headline {
-                        padding: 1%;
-                        text-align: center;
-                    }
-                    
-                    html {
-                        font-family: 'Courier New', Courier, monospace;
-                    }
-                    
-                    .static {
-                        color: aliceblue;
-                    }
-                    
-                    .one {
-                        display: block;
-                    }
-                    
-                    .two {
-                        padding: 2%;
-                    }
-                    
-                    .third {
-                        border-radius: 20%;
-                        border: 2pt black;
-                        width: auto;
-                        display: block;
-                        text-align: left;
-                    }
-                    
-                    .HomeImage {
-                        height: 78pt;
-                        width: auto;
-                        border-radius: 50%;
-                        float: left;
-                    }
-                    
-                    @media(max-width: 320px) {
-                        .selfie {
-                            height: 50px;
-                        }
-                        p {
-                            font-size: x-small;
-                        }
-                    }
-                    
-                    @media(max-width: 600px) {
-                        .selfie {
-                            height: 80px;
-                        }
-                        p {
-                            font-size: small;
-                        }
-                    }
-                    
-                    .InnerContent {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                    }
-                    
-                    .Icon {
-                        width: 200px;
-                        border-radius: 70%;
-                    }
-                    
-                    .about {
-                        padding: 0%;
-                    }
-                    
-                    .CardWrapper {
-                        height: 20%;
-                        width: auto;
-                        background-color: rgb(29, 110, 116);
-                        justify-content: center;
-                        text-align: left;
-                        display: flex;
-                    }
-                    
-                    .selfie {
-                        height: 165px;
-                    }
+                                html,
+                                body {
+                                    margin: 0;
+                                    height: 100%;
+                                }
+                                
+                                body {
+                                    background-image: url("new_background.gif");
+                                    background-repeat: repeat;
+                                    background-size: cover;
+                                    display: grid;
+                                    grid-template-columns: 5fr;
+                                    grid-template-rows: 4fr;
+                                    column-gap: 20pt;
+                                    grid-template-areas: "header header header" "one.." "two third third third third" "two third third third third";
+                                }
+                                
+                                .footer {
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    width: 100%;
+                                    text-align: center;
+                                    justify-content: center;
+                                    display: inline-block;
+                                    background-color: cornflowerblue;
+                                    border-radius: 50% 50% 0% 0%;
+                                    height: 30px;
+                                    margin-top: 100px;
+                                }
+                                
+                                .WrapGrid {
+                                    padding: 0;
+                                }
+                                
+                                .Content {}
+                                
+                                .title {
+                                    color: aliceblue;
+                                }
+                                
+                                .CardContents {
+                                    padding: 0%;
+                                    margin: 9px;
+                                    background-color: rgba(0, 255, 255, 0.233);
+                                    width: 90%;
+                                    border-radius: 20%;
+                                    justify-content: space-between;
+                                }
+                                
+                                .header {
+                                    top: 0pt;
+                                    left: 0;
+                                    width: 98%;
+                                    margin: 0;
+                                    align-items: center;
+                                    padding: 0px 0px 5px 30px;
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    background-color: cornflowerblue;
+                                    border-radius: 0 0 50% 50%;
+                                    justify-content: center;
+                                    text-align: center;
+                                    height: 20px;
+                                }
+                                
+                                .Info {
+                                    display: flexbox;
+                                    align-items: center;
+                                }
+                                
+                                ul {
+                                    list-style-type: none;
+                                    margin: 0;
+                                    padding: 15;
+                                    font-size: 18pt;
+                                    display: block;
+                                    ;
+                                }
+                                
+                                .navitem {
+                                    display: inline-block;
+                                    box-sizing: content-box;
+                                    padding: 0px 8px 0px 8px;
+                                }
+                                
+                                a:link {
+                                    text-decoration: none;
+                                    color: black;
+                                }
+                                
+                                a:visited {
+                                    text-decoration: none;
+                                    color: blueviolet;
+                                }
+                                
+                                a:hover {
+                                    text-decoration: none;
+                                    color: blueviolet;
+                                }
+                                
+                                a:active {
+                                    text-decoration: none;
+                                    color: chocolate;
+                                }
+                                
+                                h1 {
+                                    text-align: center;
+                                    font-size: 40px;
+                                    background-color: cornflowerblue;
+                                    padding: 1pt 1pt 1pt 1pt;
+                                    border-radius: 15px;
+                                    display: inline-block;
+                                    color: blueviolet;
+                                }
+                                
+                                .headline {
+                                    padding: 1%;
+                                    text-align: center;
+                                    height: 100%;
+                                }
+                                
+                                html {
+                                    font-family: 'Courier New', Courier, monospace;
+                                }
+                                
+                                .static {
+                                    color: aliceblue;
+                                }
+                                
+                                .one {
+                                    display: block;
+                                }
+                                
+                                .two {
+                                    padding: 2%;
+                                }
+                                
+                                .third {
+                                    border-radius: 20%;
+                                    border: 2pt black;
+                                    width: auto;
+                                    display: block;
+                                    text-align: left;
+                                }
+                                
+                                .HomeImage {
+                                    height: 78pt;
+                                    width: auto;
+                                    border-radius: 50%;
+                                    float: left;
+                                }
+                                
+                                @media(max-width: 320px) {
+                                    .selfie {
+                                        height: 50px;
+                                    }
+                                    p {
+                                        font-size: x-small;
+                                    }
+                                }
+                                
+                                @media(max-width: 600px) {
+                                    .selfie {
+                                        height: 80px;
+                                    }
+                                    p {
+                                        font-size: small;
+                                    }
+                                }
+                                
+                                .InnerContent {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                }
+                                
+                                .Icon {
+                                    width: 200px;
+                                    border-radius: 70%;
+                                }
+                                
+                                .about {
+                                    padding: 0%;
+                                }
+                                
+                                .CardWrapper {
+                                    height: 100%;
+                                    width: 100%;
+                                    background-color: rgba(99, 194, 201, 0.795);
+                                    justify-content: center;
+                                    text-align: left;
+                                    display: flex;
+                                    height: 50vh;
+                                    border-radius: 20%;
+                                    position: center;
+                                }
+                                
+                                .selfie {
+                                    height: 170px;
+                                    border-radius: 10%;
+                                    border-color: black;
+                                    border: 10px;
+                                    border-style: solid;
+                                }
