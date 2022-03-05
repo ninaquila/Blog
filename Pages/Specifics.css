@@ -1,0 +1,178 @@
+.button {
+    border: black;
+    border-style: solid;
+    border-radius: 20%;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #27badfbe;
+    height: 50px;
+    width: 100px;
+    font-size: medium;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    background-color: cornflowerblue;
+    border-radius: 50% 50% 0% 0%;
+    height: 30px;
+    margin-top: 100px;
+}
+
+.WrapGrid {
+    padding: 0;
+}
+
+.Content {}
+
+.title {
+    color: aliceblue;
+}
+
+.CardContents {
+    padding: 0%;
+    margin: 9px;
+    background-color: rgba(0, 255, 255, 0.233);
+    width: 90%;
+    border-radius: 20%;
+    justify-content: space-between;
+}
+
+.header {
+    top: 0pt;
+    left: 0;
+    width: 98%;
+    margin: 0;
+    align-items: center;
+    padding: 0px 0px 5px 30px;
+    overflow: hidden;
+    display: inline-block;
+    background-color: cornflowerblue;
+    border-radius: 0 0 50% 50%;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+}
+
+.Info {
+    display: flex;
+    align-items: center;
+}
+
+.navitem {
+    display: inline-block;
+    box-sizing: content-box;
+    padding: 0px 8px 0px 8px;
+}
+
+.headline {
+    padding: 1%;
+    text-align: center;
+    height: 100%;
+}
+
+.one {
+    display: block;
+}
+
+.two {
+    padding: 2%;
+}
+
+.third {
+    border-radius: 20%;
+    border: 2pt black;
+    width: auto;
+    display: block;
+    text-align: left;
+}
+
+@media only screen and (max-width: 380px) {
+    .selfie {
+        height: 50px;
+    }
+    .p {
+        font-size: x-small;
+        width: 300pt;
+    }
+    .html {
+        width: 300pt;
+        height: auto;
+    }
+    .InnerContent {
+        width: 20%;
+        height: auto;
+    }
+    .two {
+        width: 20pt;
+    }
+    .header {
+        width: 300pt;
+        font-size: xx-small;
+    }
+    .footer {
+        width: 300pt;
+        font-size: xx-small;
+    }
+    .nav {
+        width: auto;
+        font-size: xx-small;
+        display: flex;
+    }
+    .Info {
+        width: 300pt;
+        font-size: x-small;
+    }
+    .Icon {
+        width: 15%;
+    }
+}
+
+@media (max-width: 450px) {
+    .selfie {
+        height: 80px;
+    }
+    p {
+        font-size: small;
+    }
+    .Info {
+        width: 300pt;
+        font-size: x-small;
+    }
+    .Icon {
+        width: 20%;
+    }
+}
+
+.InnerContent {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about {
+    padding: 0%;
+}
+
+.CardWrapper {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(99, 194, 201, 0.795);
+    justify-content: center;
+    text-align: left;
+    display: flex;
+    height: 50vh;
+    border-radius: 20%;
+    position: center;
+}
+
+.card {
+    box-shadow: 0 5px 10px 0 rgba(99, 58, 58, 0.2);
+    border-radius: 15%;
+}

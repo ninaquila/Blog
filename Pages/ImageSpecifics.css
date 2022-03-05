@@ -1,0 +1,19 @@
+.selfie {
+    height: 170px;
+    border-radius: 10%;
+    border-color: black;
+    border: 10px;
+    border-style: solid;
+}
+
+.Icon {
+    width: 200px;
+    border-radius: 70%;
+}
+
+.HomeImage {
+    height: 78pt;
+    width: auto;
+    border-radius: 50%;
+    float: left;
+}

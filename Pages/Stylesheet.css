@@ -1,0 +1,27 @@
+@import url("ImageSpecifics.css");
+@import url("TextStylesheet.css");
+@import url("Specifics.css");
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("../Images/new_background.gif");
+    background-repeat: repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 4fr;
+    column-gap: 20pt;
+    grid-template-areas: "header header header" "one.." "two third third third third" "two third third third third";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15;
+    font-size: 18pt;
+    display: block;
+}
