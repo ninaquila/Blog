@@ -93,59 +93,51 @@
 }
 
 @media only screen and (max-width: 380px) {
+    .html {
+        width: 270pt;
+        height: 90%;
+    }
     .selfie {
         height: 50px;
     }
-    .p {
-        font-size: x-small;
-        width: 300pt;
-    }
-    .html {
-        width: 300pt;
-        height: auto;
+    p {
+        width: 250pt;
     }
     .InnerContent {
-        width: 20%;
         height: auto;
+        display: inline;
+        width: 270pt;
+        padding: 0%;
     }
     .two {
         width: 20pt;
     }
     .header {
-        width: 300pt;
-        font-size: xx-small;
+        width: 270pt;
     }
     .footer {
-        width: 300pt;
-        font-size: xx-small;
+        width: 270pt;
+        padding: 0%;
     }
     .nav {
-        width: auto;
-        font-size: xx-small;
         display: flex;
+        width: 270pt;
     }
     .Info {
-        width: 300pt;
-        font-size: x-small;
+        display: block;
+        justify-content: center;
     }
     .Icon {
         width: 15%;
+        display: block;
     }
-}
-
-@media (max-width: 450px) {
-    .selfie {
-        height: 80px;
-    }
-    p {
+    blockquote {
+        width: 90pt;
         font-size: small;
+        padding: 5%;
     }
-    .Info {
-        width: 300pt;
-        font-size: x-small;
-    }
-    .Icon {
-        width: 20%;
+    figure {
+        height: 50px;
     }
 }
 
