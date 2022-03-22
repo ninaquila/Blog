@@ -22,13 +22,12 @@
     border-radius: 50% 50% 0% 0%;
     height: 30px;
     margin-top: 100px;
+    position: fixed;
 }
 
 .WrapGrid {
     padding: 0;
 }
-
-.Content {}
 
 .title {
     color: aliceblue;
@@ -93,12 +92,13 @@
 }
 
 @media only screen and (max-width: 380px) {
-    .html {
-        width: 270pt;
-        height: 90%;
+    .html,
+    .body {
+        width: 100%;
+        height: 100%;
     }
     .selfie {
-        height: 50px;
+        height: 90px;
     }
     p {
         width: 250pt;
@@ -113,11 +113,22 @@
         width: 20pt;
     }
     .header {
-        width: 270pt;
+        width: 100%;
     }
     .footer {
-        width: 270pt;
+        width: 100%;
         padding: 0%;
+    }
+    li {
+        text-align: left;
+        font-size: 10pt;
+    }
+    .selfie {
+        height: 150px;
+        padding: -50px -50px 5pt 5pt;
+    }
+    .CardWrapper {
+        height: 100vh;
     }
     .nav {
         display: flex;
@@ -136,8 +147,22 @@
         font-size: small;
         padding: 5%;
     }
-    figure {
-        height: 50px;
+    figcaption {
+        opacity: 0;
+        font-size: xx-small;
+    }
+    .card,
+    .CardContents {
+        text-align: left;
+        justify-content: start;
+        height: 90vh;
+        padding-top: -150vh;
+        margin-top: 0%;
+        margin-left: 5%;
+        background-color: rgba(240, 248, 255, 0.603);
+    }
+    .WrapGrid {
+        height: 10%;
     }
 }
 
@@ -153,8 +178,6 @@
 }
 
 .CardWrapper {
-    height: 100%;
-    width: 100%;
     background-color: rgba(99, 194, 201, 0.795);
     justify-content: center;
     text-align: right;
